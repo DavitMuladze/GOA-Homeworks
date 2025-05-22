@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Layout</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+
+    .word {
+      position: absolute;
+    }
+
+    .hello {
+      top: 20px;
+      right: 50px;
+      text-decoration: underline dotted green;
+    }
+
+    .world {
+      top: 80px;
+      left: 120px;
+      text-decoration: line-through;
+    }
+
+    .goal {
+      top: 160px;
+      left: 200px;
+      text-decoration: underline;
+    }
+
+    .oriented {
+      top: 200px;
+      left: 250px;
+    }
+
+    .oriented::before {
+      content: "•";
+      color: green;
+      margin-right: 4px;
+    }
+
+    .academy {
+      top: 270px;
+      left: 20px;
+      text-decoration: line-through;
+    }
+
+    .is {
+      top: 310px;
+      left: 40px;
+    }
+
+    .symbol1 {
+      top: 90px;
+      left: 10px;
+      color: red;
+    }
+
+    .symbol2 {
+      top: 300px;
+      left: 10px;
+    }
+
+    .the {
+      top: 370px;
+      left: 300px;
+      text-decoration: underline;
+      color: green;
+    }
+
+    .best {
+      top: 420px;
+      left: 150px;
+      text-decoration: underline;
+      font-weight: bold;
+      color: gray;
+    }
+
+    .one {
+      bottom: 10px;
+      right: 50px;
+      text-decoration: underline dotted;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="word hello">Hello</div>
+  <div class="word world">World</div>
+  <div class="word goal">Goal</div>
+  <div class="word oriented">Oriented</div>
+  <div class="word academy">Academy</div>
+  <div class="word is">is</div>
+  <div class="word symbol1">=</div>
+  <div class="word symbol2">-</div>
+  <div class="word the">the</div>
+  <div class="word best">BEST</div>
+  <div class="word one">one</div>
+
+</body>
+</html>

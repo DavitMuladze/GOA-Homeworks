@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>ჩემი საყვარელი რეცეპტები</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            padding: 20px;
+        }
+        h1 {
+            color: #cc5500;
+        }
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #aaa;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ffcc99;
+        }
+        .auth-box {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ffe6cc;
+            width: 300px;
+        }
+        .media {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ჩემი საყვარელი რეცეპტების საიტი</h1>
+
+    <!-- ავტორიზაცია -->
+    <div class="auth-box">
+        <h3>ავტორიზაცია</h3>
+        <form>
+            <label for="username">მომხმარებელი:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">პაროლი:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <button type="submit">შესვლა</button>
+        </form>
+    </div>
+
+    <!-- ვიდეო რეცეპტი -->
+    <div class="media">
+        <h2>ვიდეო რეცეპტი: ხინკალი</h2>
+        <video width="480" controls>
+            <source src="khinkali-video.mp4" type="video/mp4">
+            თქვენს ბრაუზერს არ აქვს ვიდეოს მხარდაჭერა.
+        </video>
+    </div>
+
+    <!-- აუდიო ფონი -->
+    <div class="media">
+        <h2>აუდიო: სამზარეულოს ფონური მუსიკა</h2>
+        <audio controls>
+            <source src="kitchen-music.mp3" type="audio/mpeg">
+            თქვენს ბრაუზერს არ აქვს აუდიოს მხარდაჭერა.
+        </audio>
+    </div>
+
+    <!-- ინგრედიენტების ცხრილი -->
+    <h2>ინგრედიენტები - ხაჭაპური</h2>
+    <table>
+        <tr>
+            <th>ინგრედიენტი</th>
+            <th>რაოდენობა</th>
+        </tr>
+        <tr>
+            <td>ფქვილი</td>
+            <td>500 გ</td>
+        </tr>
+        <tr>
+            <td>წყალი</td>
+            <td>250 მლ</td>
+        </tr>
+        <tr>
+            <td>ხაჭო ან სულგუნი</td>
+            <td>300 გ</td>
+        </tr>
+        <tr>
+            <td>კვერცხი</td>
+            <td>1 ცალი</td>
+        </tr>
+        <tr>
+            <td>მარილი</td>
+            <td>გემოვნებით</td>
+        </tr>
+    </table>
+
+</body>
+</html>
