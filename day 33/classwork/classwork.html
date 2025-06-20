@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დავალება</title>
+  <!-- Google Font Import -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    /* საერთო სტილი */
+    p {
+      transition: all 2s;
+    }
+
+    /* 1. პარაგრაფების ზომის და ფერის ცვლილება hover-ზე */
+    p:nth-of-type(1):hover {
+      transform: scale(1.3);
+      color: red;
+    }
+    p:nth-of-type(2):hover {
+      transform: scale(1.4);
+      color: red;
+    }
+    p:nth-of-type(3):hover {
+      transform: scale(1.5);
+      color: blue;
+    }
+    p:nth-of-type(4):hover {
+      transform: scale(1.6);
+      color: blue;
+    }
+
+    /* 1. hyperlink-ის ფერის ცვლილება */
+    a:link {
+      color: black;
+    }
+    a:visited {
+      color: green;
+    }
+
+    /* 2. ფოტოს ზომის ცვლილება */
+    .resizable-img {
+      width: 100px;
+      transition: width 0.5s;
+    }
+
+    .resizable-img:hover {
+      width: 200px;
+    }
+
+    /* 3. h1 სტილები */
+    h1 {
+      transition: all 0.5s;
+    }
+
+    h1:hover {
+      font-size: 40px;
+      background-color: red;
+    }
+
+    h1:active {
+      color: blue;
+    }
+
+    /* 4. სამი სურათის responsive ზომა */
+    .img1:hover {
+      width: 50vw;
+    }
+
+    .img2:hover {
+      width: 75vw;
+    }
+
+    .img3:hover {
+      width: 100vw;
+    }
+
+    .img1, .img2, .img3 {
+      width: 100px;
+      transition: width 0.5s;
+    }
+
+    /* 5. Hover-ზე შეცვალოს font-family */
+    h1:hover,
+    p:hover,
+    button:hover,
+    a:hover {
+      font-family: 'Pacifico', cursive;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. ოთხი პარაგრაფი -->
+  <p>პირველი პარაგრაფი</p>
+  <p>მეორე პარაგრაფი</p>
+  <p>მესამე პარაგრაფი</p>
+  <p>მეოთხე პარაგრაფი</p>
+
+  <!-- Hyperlink -->
+  <a href="#">ეს არის ბმული</a>
+
+  <hr>
+
+  <!-- 2. სურათი ზომის ცვლილებით -->
+  <img class="resizable-img" src="https://via.placeholder.com/100" alt="სურათი">
+
+  <hr>
+
+  <!-- 3. H1 სათაური -->
+  <h1>სათაური</h1>
+
+  <hr>
+
+  <!-- 4. სამი სურათი -->
+  <img class="img1" src="https://via.placeholder.com/100" alt="img1">
+  <img class="img2" src="https://via.placeholder.com/100" alt="img2">
+  <img class="img3" src="https://via.placeholder.com/100" alt="img3">
+
+  <hr>
+
+  <!-- 5. სხვა ელემენტები -->
+  <h2>სათაური 2</h2>
+  <p>ტექსტი</p>
+  <button>ღილაკი</button>
+  <a href="#">ლინკი</a>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+def word_len(sentance):
+    result = []         # შედეგების სია
+    words = ""          # მიმდინარე სიტყვის შენახვა
+
+    for i in sentance:  # წინადადების თითოეული სიმბოლო
+        if i != " ":    # თუ სივრცე არაა, ვაგრძელებთ სიტყვის აგებას
+            words += i
+        else:           # როცა ვხვდებით სივრცეს:
+            result.append(words + str(len(words)))  # ვამატებთ სიტყვას + სიგრძეს
+            words = ""   # ვაცარიელებთ მიმდინარე სიტყვას
+
+    # ვამატებთ ბოლო სიტყვას (რადგან ბოლოს space არაა)
+    result.append(words + str(len(words)))
+
+    print(result)
+
+word_len("Hello how are you")

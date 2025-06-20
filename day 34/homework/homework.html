@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ბმულები და სტილები</title>
+
+  <!-- Google Fonts import -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lobster&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    /* 1) ერთი ბმული Example */
+    .example-link:link {
+      color: black;
+      background-color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 5px;
+      display: inline-block;
+    }
+
+    .example-link:visited {
+      color: saddlebrown;
+      background-color: lightgray;
+    }
+
+    .example-link:hover {
+      color: white;
+      background-color: orange;
+    }
+
+    .example-link:active {
+      color: white;
+      background-color: red;
+    }
+
+    /* 2) სამი ბმული */
+    .nav-link {
+      color: darkblue;
+      font-family: 'Lobster', cursive;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    .nav-link:hover {
+      color: #800000; /* ბორდოსფერი */
+    }
+
+    .nav1 {
+      font-weight: normal;
+    }
+
+    .nav2 {
+      font-weight: bold;
+    }
+
+    .nav3 {
+      font-weight: normal;
+    }
+
+    /* 3) ბლოკი სათაურითა და ტექსტით */
+    .text-block {
+      width: 250px;
+      height: 150px;
+      background-color: white;
+      color: black;
+      font-family: 'Open Sans', sans-serif;
+      border: 1px solid #ccc;
+      padding: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .text-block:hover {
+      background-color: #f0f8ff; /* ღია ცისფერი */
+    }
+
+    .text-block h3 {
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    /* 4) ორი ბმული (example.com, google.com) */
+    .basic-link:link {
+      color: blue;
+      font-family: sans-serif;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .basic-link:visited {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1) Example ბმული -->
+  <a href="https://example.com" class="example-link" target="_blank">ეწვიე Example-ს</a>
+
+  <hr>
+
+  <!-- 2) სამი ბმული -->
+  <a href="#" class="nav-link nav1">მთავარი</a>
+  <a href="#" class="nav-link nav2">ჩვენს შესახებ</a>
+  <a href="#" class="nav-link nav3">კონტაქტი</a>
+
+  <hr>
+
+  <!-- 3) ტექსტის ბლოკი -->
+  <div class="text-block">
+    <h3>სათაური</h3>
+    <p>ეს არის ინფორმაციული ბლოკი. აქ მოთავსებულია ტექსტი მომხმარებლისთვის.</p>
+  </div>
+
+  <hr>
+
+  <!-- 4) ორი ბმული -->
+  <a href="https://example.com" class="basic-link" target="_blank">example.com</a>
+  <a href="https://google.com" class="basic-link" target="_blank">google.com</a>
+
+</body>
+</html>
