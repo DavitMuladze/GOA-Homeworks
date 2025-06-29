@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Table Design</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: red;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: black;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 95%;
+      max-width: 1000px;
+    }
+
+    th {
+      background-color: gold;
+      color: black;
+      padding: 10px;
+      border: 2px solid orange;
+      font-weight: bold;
+    }
+
+    td {
+      padding: 10px;
+      border: 2px solid orange;
+    }
+
+    td:first-child {
+      background-color: #ffff66; /* ღია ყვითელი */
+      font-weight: bold;
+      text-align: center;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #fff; /* თეთრი რიგები */
+    }
+
+    tr:nth-child(odd) td {
+      background-color: #fefefe; /* ოდნავ განსხვავებული თეთრი */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Table Design</h1>
+  <h2>tables</h2>
+
+  <table>
+    <tr>
+      <th>Sr.No</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Pincode</th>
+      <th>Mobile No</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Roshan</td>
+      <td>Kurar village</td>
+      <td>Mumbai</td>
+      <td>400097</td>
+      <td>882817654</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Rohan</td>
+      <td>Kandivali</td>
+      <td>Mumbai</td>
+      <td>400097</td>
+      <td>3453547665</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Sneha</td>
+      <td>Aand nagar malad</td>
+      <td>Mumbai</td>
+      <td>400097</td>
+      <td>5345656579</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Sachin</td>
+      <td>Ganesh nagar Andheri</td>
+      <td>Mumbai</td>
+      <td>576788</td>
+      <td>5453655476</td>
+    </tr>
+  </table>
+
+</body>
+</html>
